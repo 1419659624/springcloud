@@ -1,0 +1,15 @@
+server:
+    port: 8040
+eureka:
+    client:
+       service-url:
+          defaultZone: http://root:123456@localhost:8761/eureka/
+    instance:
+       prefer-ip-address: true
+spring:
+    application:
+        name: microservice-geteway-zuul
+zuul:
+  ignoredServices: microservice-consumer-movie-ribbon-with-hystrix
+  routes:
+    microservice-provider-user: /user/**
