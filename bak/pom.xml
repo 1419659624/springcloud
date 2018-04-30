@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.itmuch.cloud</groupId>
@@ -31,10 +32,16 @@
 		</module>
 		<module>microservice-hystrix-dashboard</module>
 		<module>microservice-hystrix-turbine</module>
-    <module>microservice-geteway-zuul</module>
-    <module>microservice-geteway-zuul-reg-exp</module>
-    <module>microservice-geteway-zuul-filter</module>
-  </modules>
+		<module>microservice-geteway-zuul</module>
+		<module>microservice-geteway-zuul-reg-exp</module>
+		<module>microservice-geteway-zuul-filter</module>
+		<module>microservice-config-server</module>
+		<module>microservice-config-client</module>
+		<module>microservice-config-server-security</module>
+		<module>microservice-config-server-eureka</module>
+		<module>microservice-config-client-eureka</module>
+		<module>microservice-config-client-refresh</module>
+	</modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -46,7 +53,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.9.RELEASE</version>
-		<relativePath/>
+		<relativePath />
 	</parent>
 	<dependencyManagement>
 		<dependencies>
